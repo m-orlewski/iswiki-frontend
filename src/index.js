@@ -1,6 +1,6 @@
 import React from 'react';
 // add when push on heroku
-// import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import { AuthProvider } from './context/AuthProvider';
@@ -12,6 +12,7 @@ const rootElement = document.getElementById("root");
 const root = createRoot(rootElement);
 
 // delete when push on heroku
+/*
 root.render(
   <React.StrictMode>
     <BrowserRouter>
@@ -23,17 +24,18 @@ root.render(
     </BrowserRouter>
   </React.StrictMode>
 );
+*/
 
-// add when push on heroku
-// ReactDOM.render(
-//   <React.StrictMode>
-//     <BrowserRouter>
-//       <AuthProvider>
-//         <Routes>
-//           <Route path="/*" element={<App />} />
-//         </Routes>
-//       </AuthProvider>
-//     </BrowserRouter>
-//   </React.StrictMode>,
-//   document.getElementById('root')
-// );
+//add when push on heroku
+ReactDOM.render(
+  <React.StrictMode>
+    <BrowserRouter>
+      <AuthProvider>
+        <Routes>
+          <Route path="/*" element={<App />} />
+        </Routes>
+      </AuthProvider>
+    </BrowserRouter>
+  </React.StrictMode>,
+  document.getElementById('root')
+);

@@ -1,9 +1,7 @@
 import axios from 'axios';
 import useAuth from '../hooks/useAuth';
-// delete when push on heroku
+
 const baseURL = 'http://localhost:8000/api/';
-// add when push on heroku
-// const baseURL = 'https://is-wiki.herokuapp.com'
 
 
 const axiosInstance = axios.create({
