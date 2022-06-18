@@ -1,7 +1,6 @@
 import axios from 'axios';
 import useAuth from '../hooks/useAuth';
-
-const baseURL = 'http://localhost:8000/api/';
+const baseURL = 'http://iswiki-backend.herokuapp.com/api/';
 
 
 const axiosInstance = axios.create({
