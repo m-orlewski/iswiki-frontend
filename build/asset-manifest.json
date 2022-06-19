@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b4388822.css",
+    "main.js": "/static/js/main.fde17979.js",
+    "static/media/2.jpg": "/static/media/2.bd3ffcdb11c0effdf150.jpg",
+    "static/media/profile.svg": "/static/media/profile.cab2592fd5be08eee96cf993fe020d2e.svg",
+    "static/media/subject.svg": "/static/media/subject.52d99dca87f3ecb9919549a917f6d580.svg",
+    "static/media/lecture.svg": "/static/media/lecture.a720afac76436d4c02f50a8707ad285a.svg",
+    "static/media/Moon.png": "/static/media/Moon.d2ad5f96750512c33856.png",
+    "static/media/Sun.png": "/static/media/Sun.a358a300c515fdf2ba50.png",
+    "static/media/logo.svg": "/static/media/logo.5582c131776abe4c1a92.svg",
+    "index.html": "/index.html",
+    "main.b4388822.css.map": "/static/css/main.b4388822.css.map",
+    "main.fde17979.js.map": "/static/js/main.fde17979.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b4388822.css",
+    "static/js/main.fde17979.js"
+  ]
+}
