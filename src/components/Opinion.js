@@ -90,7 +90,7 @@ const Opinion = () =>
                                 <div id="author">{data.date} {data.author}</div><br/>
                                         <div id="content">
                                             <div id='contentColumn'>
-                                                <div id='text'>{data.score} - {data.text}</div>
+                                                <div id='text'>{data.score}/10 - {data.text}</div>
                                             </div><br/>
                                         </div><br/>
                                 </div>

@@ -79,7 +79,7 @@ const Lecturer = () => {
                         (   
                             <>             
                                 <h2>{opinion_date} &nbsp; {opinion_name + " " + opinion_surname}</h2>
-                                <h5>{opinion_score} - {opinion_description}</h5>
+                                <h5>{opinion_score}/10 - {opinion_description}</h5>
                                 <br/><br/>
                             </>
                         )
@@ -88,10 +88,10 @@ const Lecturer = () => {
                         (   
                             <>             
                                 <h2>{opinion_date[0]} &nbsp; {opinion_name[0] + " " + opinion_surname[0]}</h2>
-                                <h5>{opinion_score[0]} - {opinion_description[0]}</h5>
+                                <h5>{opinion_score[0]}/10 - {opinion_description[0]}</h5>
                                 <br/><br/>
                                 <h2>{opinion_date[1]} &nbsp; {opinion_name[1] + " " + opinion_surname[1]}</h2>
-                                <h5>{opinion_score[1]} - {opinion_description[1]}</h5>
+                                <h5>{opinion_score[1]}/10 - {opinion_description[1]}</h5>
                             </>
                         )
                         :
