@@ -38,6 +38,7 @@ const Opinion = () =>
                             "date": copy[i].upload_date.slice(0, 10),   
                             "author": copy[i].author_name + " " +  copy[i].author_surname,
                             "text": copy[i].description,
+                            "score": copy[i].score,
                             "usefulness": "65%",   
                             "votes": 20,
                             "value": "none"   
@@ -89,7 +90,7 @@ const Opinion = () =>
                                 <div id="author">{data.date} {data.author}</div><br/>
                                         <div id="content">
                                             <div id='contentColumn'>
-                                                <div id='text'>{data.text}</div>
+                                                <div id='text'>{data.score} - {data.text}</div>
                                             </div><br/>
                                         </div><br/>
                                 </div>

@@ -40,6 +40,7 @@ const Lecturer = () => {
     const opinion_date = opinionList.filter(l => l.lecturer == params.lecturerId).map(l => 
                                 (l.upload_date.slice(0, 10)));
     const opinion_description = opinionList.filter(l => l.lecturer == params.lecturerId).map(l => (l.description));
+    const opinion_score = opinionList.filter(s => s.lecturer == params.lecturerId).map(s => (s.score));
 
     const courses = CoursesList.filter(s => s.lecturers.filter(lecture => lecture == params.lecturerId).length != 0);
     return (
@@ -78,7 +79,7 @@ const Lecturer = () => {
                         (   
                             <>             
                                 <h2>{opinion_date} &nbsp; {opinion_name + " " + opinion_surname}</h2>
-                                <h5>{opinion_description}</h5>
+                                <h5>{opinion_score} - {opinion_description}</h5>
                                 <br/><br/>
                             </>
                         )
@@ -87,10 +88,10 @@ const Lecturer = () => {
                         (   
                             <>             
                                 <h2>{opinion_date[0]} &nbsp; {opinion_name[0] + " " + opinion_surname[0]}</h2>
-                                <h5>{opinion_description[0]}</h5>
+                                <h5>{opinion_score[0]} - {opinion_description[0]}</h5>
                                 <br/><br/>
                                 <h2>{opinion_date[1]} &nbsp; {opinion_name[1] + " " + opinion_surname[1]}</h2>
-                                <h5>{opinion_description[1]}</h5>
+                                <h5>{opinion_score[1]} - {opinion_description[1]}</h5>
                             </>
                         )
                         :
